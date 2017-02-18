@@ -13,7 +13,7 @@
 
     <title>
         
-          Welcome to Jimmy&#39;s Blog - Jimmy的博客 | Jimmy&#39;s Blog
+          Welcome to my Blog - Jimmy的博客 | Jimmy&#39;s Blog
         
     </title>
 
@@ -90,14 +90,14 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archives/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archives/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -168,7 +168,7 @@
                           <a class="tag" href="/tags/#产品观" title="产品观">产品观</a>
                         
                     </div>
-                    <h1>Welcome to Jimmy&#39;s Blog</h1>
+                    <h1>Welcome to my Blog</h1>
                     <h2 class="subheading"> &quot;Hello World, Hello Blog&quot;</h2>
                     <span class="meta">
                         Posted by JimmyFang on
@@ -191,16 +191,17 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jimmy 的 Blog 就这么开通了。 </p>
-<p>2017 年，Jimmy总算有个地方可以好好写点东西了。</p>
-<p>作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>接下来说说搭建这个博客的技术细节。  </p>
-<p>主要借助的是<a href="https://pages.github.com/" target="_blank" rel="external">Hexo</a>的快速Building Blog 的技术方案，非常轻松时尚，下面主要介绍一下如何快速搭建：</p>
-<p>利用NPM安装Hexo，我借助的我强大的阿里巴巴源，安装速度非常快速<code>cnpm install hexo-cli -g</code></p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>回顾这个博客的诞生，纯粹是出于个人兴趣。在知乎相关问题上回答并获得一定的 star 后，我决定把这个博客主题当作一个小小的开源项目来维护。</p>
-<p>在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。而作为一个开源项目，我也积极的为其完善文档与解决 issue。</p>
-<p>如果你恰好逛到了这里，希望你也能喜欢这个博客主题。</p>
-<p>—— Hux 后记于 2015.10</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jimmy 的 Blog 就这么开通了，2017 年，Jimmy总算有个地方可以好好写点东西了;</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>接下来说说搭建这个博客的技术细节,主要借助的是<a href="https://pages.github.com/" target="_blank" rel="external">Hexo</a>的快速Building Blog 的技术方案，非常轻松时尚，下面主要介绍一下如何快速搭建:</p>
+<ul>
+<li>利用NPM安装Hexo，我借助的我强大的阿里巴巴源，安装速度非常快速<code>cnpm install hexo-cli -g</code>,如果是是Mac OS下的话，记得取得Root权限，推荐<code>sudo cnpm install hexo-cli  -g</code>；</li>
+<li>一个博客的UI设计风格也是非常重要的一个环节，所以在搜索了GitHub后，发现了一个不错的主题<a href="https://github.com/Kaijun/hexo-theme-huxblog">hexo-theme-huxblog</a>，所以借鉴使用，在此特别感谢。</li>
+<li>按照Hexo部署要求，安装hexo-deployer-git，直接<code>cnpm install hexo-deployer-git --save</code>，接着需要在<code>_config.yml</code>修改为git部署配置，相关配置如下：<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git <span class="comment">// 类型</span></span><br><span class="line"><span class="symbol">  repo:</span> <span class="params">&lt;repository url&gt;</span> <span class="comment">//库（Repository）地址</span></span><br><span class="line"><span class="symbol">  branch:</span> [branch] <span class="comment">// 分支名称。如果您使用的是GitHub的话，程序会尝试自动检测</span></span><br><span class="line"><span class="symbol">  message:</span> [message] <span class="comment">// 自定义提交信息 (默认为 Site updated: &#123;&#123; now('YYYY-MM-DD HH:mm:ss') &#125;&#125;)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>最后执行<code>hexo deployer</code>，Hexo会部署至repo相关处，JimBlog借助GitHub个人博客站点；</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>Jimmy非常期待与大家分享个人所得，能够帮助到您的话，那么我会非常开心！！！</p>
+<p>   ———— Jimmy 写于浙江杭州</p>
 
 
                 <hr>
